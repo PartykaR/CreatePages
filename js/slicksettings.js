@@ -4,7 +4,7 @@ $('.team-carousel').slick(
       mobileFirst: true,
       autoplay: true,
       arrows: false,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplaySpeed: 2000,
       responsive: [
