@@ -16,3 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
    window.addEventListener('scroll', addShadow)
 })
+
+
+const footerYear = document.querySelector('.footer__year')
+
+const handleCurrentYear = () => {
+   const year = (new Date).getFullYear();
+   footerYear.innerText = year;
+}
+handleCurrentYear();
