@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8">
+    <title>Zamów stronę Płatność w Bitcoin lub w PLN</title>
+    <meta name="description"
+        content="Przerabiamy stare strony na strony responsywne, sprawimy że twoja strona będzie dobrze wyglądać na urządzeniach mobilnych" />
+    <meta name="keywords"
+        content="odnowienie strony, tworzenie responsywnych stron, płatność w BTC, strony internetowe, responsywne strony, strony za bitcoiny, responsywne strony www, tanie strony internetowe, redesing stron, płatność w btc kraków" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- @todo dodany link do google fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9518654-17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-9518654-17');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="team">
+            <img src="img/banSlider/s1.png" alt="" class="color">
+            <img src="img/banSlider/s1a.png" alt="" class="gray">
+            <div>
+                <div class="member">
+                    <h1>Anna Baugard</h1>
+                    <h2>Programistka JS</h2>
+                </div>
+            </div>
+
+            <div id="arrow">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-angle-left off"></i>
+            </div>
+
+            <div class="menu menu__horizontal">
+                <nav class="off">
+                    <ul>
+                        <li>
+                            <a id="link1" href="index.html">Oferta</a>
+                        </li>
+                        <li>
+                            <a id="link2" href="design.html">Design</a>
+                        </li>
+                        <li>
+                            <a id="link3" href="omnie.html">O mnie</a>
+                        </li>
+                        <li>
+                            <a id="link5" href="bitcoin.html">Bitcoin</a>
+                        </li>
+                        <li>
+                            <a id="link4" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br />
+
+            <section id="content">
+                <h2>Kontakt</h2>
+                <a id="link6" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+
+                <section class="contact">
+                    <div>
+                        <p> Zamów u nas stronę, płatność możliwa w krptowalucie
+                            <a href="bitcoin.html"><strong>Bitcoin</strong></a> oraz w walutach FIAT: PLN, EUR, USD
+                        </p>
+                    </div>
+                    <h3 id="kontakt">Kontakt</h3>
+                    <div id="send_form_status"></div>
+                    <form method="post" action="/send_form.php" id="contact_form">
+                        <div><label for="name">Imię i nazwisko</label></div>
+                        <div><input type="text" name="name" id="name" class="formField" /></div>
+                        <div><label for="phone">Numer telefonu</label></div>
+                        <div><input type="text" name="phone" id="phone" class="formField" /></div>
+                        <div><label for="email">Adres email</label></div>
+                        <div><input type="text" name="email" id="email" class="formField" /></div>
+                        <div><label for="message">Treść wiadomości</label></div>
+                        <div><textarea name="message" id="message" class="formField"></textarea></div>
+                        <div><button id="sendBtn">Wyślij</button></div>
+                    </form>
+                    <p><a href="tel:790282074" class="contact-form__info-link">Tel: 790 282 074</a> </p>
+                    <p><a href="tel:48123809805" class="contact-form__info-link">Tel: +48 12 380 98 05</a> </p>
+                    <div id="like_button_container"></div>
+                </section>
+
+
+                <div class="scrollup">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    <p>Robert Partyka © 2021</p>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/scriptBan.js"></script>
+    <!-- <script src="js/effect.js"></script> -->
+    <script src="js/javascript.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/script.js"></script>
+    <!-- <script src="js/sticky.js"></script> -->
+    <!-- <script src="js/App.js"></script> -->
+    <script src="js/contact.js"></script>
+
+    <!-- Załaduj Reacta. -->
+    <!-- Uwaga: podczas wdrażania aplikacji do środowiska produkcyjnego, zamień "development.js" na "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</body>
+
+</html>
