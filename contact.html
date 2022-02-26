@@ -4,18 +4,19 @@
 <head>
     <meta name="robots" content="index, follow" />
     <meta charset="UTF-8">
-    <title>Zamów stronę Płatność w Bitcoin lub w PLN</title>
-    <meta name="description"
-        content="Przerabiamy stare strony na strony responsywne, sprawimy że twoja strona będzie dobrze wyglądać na urządzeniach mobilnych" />
-    <meta name="keywords"
-        content="odnowienie strony, tworzenie responsywnych stron, płatność w BTC, strony internetowe, responsywne strony, strony za bitcoiny, responsywne strony www, tanie strony internetowe, redesing stron, płatność w btc kraków" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- @todo dodany link do google fonts-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Tworzenie stron www</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/4a157c0dfa.js" crossorigin="anonymous"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9518654-17"></script>
     <script>
@@ -32,111 +33,84 @@
 
 </head>
 
-<body>
-    <div class="wrapper">
-        <header class="team">
-            <img src="img/banSlider/s1.png" alt="" class="color">
-            <img src="img/banSlider/s1a.png" alt="" class="gray">
-            <div>
-                <div class="member">
-                    <h1>Anna Baugard</h1>
-                    <h2>Programistka JS</h2>
-                </div>
-            </div>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="122">
 
-            <div id="arrow">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-        </header>
-
-        <main>
-            <div class="burger">
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-headset"></i>odnawianie <span class="blue-text">stron</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
-                <i class="fas fa-angle-left off"></i>
-            </div>
-
-            <div class="menu menu__horizontal">
-                <nav class="off">
-                    <ul>
-                        <li>
-                            <a id="link1" href="index.html">Oferta</a>
-                        </li>
-                        <li>
-                            <a id="link2" href="design.html">Design</a>
-                        </li>
-                        <li>
-                            <a id="link3" href="omnie.html">O mnie</a>
-                        </li>
-                        <li>
-                            <a id="link5" href="bitcoin.html">Bitcoin</a>
-                        </li>
-                        <li>
-                            <a id="link4" href="#">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <br />
-
-            <section id="content">
-                <h2>Kontakt</h2>
-                <a id="link6" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
-
-                <section class="contact">
-                    <div>
-                        <p> Zamów u nas stronę, płatność możliwa w krptowalucie
-                            <a href="bitcoin.html"><strong>Bitcoin</strong></a> oraz w walutach FIAT: PLN, EUR, USD
-                        </p>
-                    </div>
-                    <h3 id="kontakt">Kontakt</h3>
-                    <div id="send_form_status"></div>
-                    <form method="post" action="/send_form.php" id="contact_form">
-                        <div><label for="name">Imię i nazwisko</label></div>
-                        <div><input type="text" name="name" id="name" class="formField" /></div>
-                        <div><label for="phone">Numer telefonu</label></div>
-                        <div><input type="text" name="phone" id="phone" class="formField" /></div>
-                        <div><label for="email">Adres email</label></div>
-                        <div><input type="text" name="email" id="email" class="formField" /></div>
-                        <div><label for="message">Treść wiadomości</label></div>
-                        <div><textarea name="message" id="message" class="formField"></textarea></div>
-                        <div><button id="sendBtn">Wyślij</button></div>
-                    </form>
-                    <p><a href="tel:790282074" class="contact-form__info-link">Tel: 790 282 074</a> </p>
-                    <p><a href="tel:48123809805" class="contact-form__info-link">Tel: +48 12 380 98 05</a> </p>
-                    <div id="like_button_container"></div>
-                </section>
-
-
-                <div class="scrollup">
-                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="index.html#home">Home</a>
+                    <a class="nav-link" href="index.html#aboutus">O nas</a>
+                    <a class="nav-link" href="index.html">portfolio</a>
+                    <a class="nav-link" href="index.html#prices">ceny</a>
+                    <a class="nav-link" href="index.html#team">zespół</a>
+                    <a class="nav-link" href="index.html#achievements">osiągnięcia</a>
+                    <a class="nav-link" href="index.html#contact">kontakt</a>
                 </div>
+            </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="hero-img-offer">
+            <div class="hero-shadow-offer"></div>
+
+            <a href="#design"><i class="fas fa-chevron-down bounce-top"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Kontakt</h2>
+            <div class="underline"></div>
+
+            <section class="contact-form">
+                <div>
+                    <p> Zamów u nas stronę, płatność możliwa w krptowalucie
+                        <a href="bitcoin.html"><strong>Bitcoin</strong></a> oraz w walutach FIAT: PLN, EUR, USD
+                    </p>
+                </div>
+                <h3 id="kontakt">Kontakt</h3>
+                <div id="send_form_status"></div>
+                <form method="post" action="/send_form.php" id="contact_form">
+                    <div><label for="name">Imię i nazwisko</label></div>
+                    <div><input type="text" name="name" id="name" class="formField" /></div>
+                    <div><label for="phone">Numer telefonu</label></div>
+                    <div><input type="text" name="phone" id="phone" class="formField" /></div>
+                    <div><label for="email">Adres email</label></div>
+                    <div><input type="text" name="email" id="email" class="formField" /></div>
+                    <div><label for="message">Treść wiadomości</label></div>
+                    <div><textarea name="message" id="message" class="formField"></textarea></div>
+                    <div><button id="sendBtn">Wyślij</button></div>
+                </form>
+                <p><a href="tel:790282074" class="contact-form__info-link">Tel: 790 282 074</a> </p>
+                <p><a href="tel:48123809805" class="contact-form__info-link">Tel: +48 12 380 98 05</a> </p>
+                <div id="like_button_container"></div>
             </section>
+        </div>
 
-            <footer>
-                <div class="footer">
-                    <p>Robert Partyka © 2021</p>
-                </div>
-            </footer>
-        </main>
+    </main>
 
-    </div>
+    <footer class="footer bg-dark py-4 text-center">
+        <p class="mb-0">&copy; <span class="footer__year"></span> Robert Partyka </p>
+    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/scriptBan.js"></script>
-    <!-- <script src="js/effect.js"></script> -->
-    <script src="js/javascript.js"></script>
-    <!-- <script src="js/index.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aossetings.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slicksettings.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script src="js/sticky.js"></script> -->
-    <!-- <script src="js/App.js"></script> -->
-    <script src="js/contact.js"></script>
-
-    <!-- Załaduj Reacta. -->
-    <!-- Uwaga: podczas wdrażania aplikacji do środowiska produkcyjnego, zamień "development.js" na "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </body>
 
 </html>
