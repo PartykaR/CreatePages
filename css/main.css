@@ -627,11 +627,11 @@ textarea.formField {
 }
 
 .status_ok {
-  color: #060;
+  color: #0b570b;
 }
 
 .status_err {
-  color: #F00;
+  color: #860707;
 }
 
 .footer {

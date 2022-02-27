@@ -491,12 +491,12 @@ h2 {
    border: 1px solid #ccc;
    border-radius: 3px;
    margin: 3px 0 10px 0;
-   padding: 3px 0
+   padding: 3px 0;
 }
 
 textarea.formField {
    width: 300px;
-   height: 70px
+   height: 70px;
 }
 
 #sendBtn {
@@ -507,25 +507,24 @@ textarea.formField {
    line-height: 32px;
    font-size: 14px;
    padding: 0 25px;
-   border-radius: 3px
+   border-radius: 3px;
 }
 
 #send_form_status {
    border: 1px dashed #ccc;
    display: none;
    padding: 0 10px;
-   margin: 10px 0
+   margin: 10px 0;
 }
 
 .status_ok {
-   color: #060
+   color: #0b570b;
 }
 
 .status_err {
-   color: #F00
+   color: #860707;
 }
 
-;
 
 .footer {
    color: $white;
