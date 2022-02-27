@@ -439,7 +439,7 @@ h2 {
 
    h2 {
       color: $white;
-      font-weight: bold;
+      // font-weight: bold;
    }
 
    .underline {
@@ -489,7 +489,7 @@ h2 {
             }
 
             a:hover {
-               color: $p-color;
+               color: $main-color;
             }
          }
       }

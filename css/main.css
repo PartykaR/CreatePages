@@ -545,7 +545,6 @@ h2 {
 
 .contact h2 {
   color: antiquewhite;
-  font-weight: bold;
 }
 
 .contact .underline {
@@ -602,7 +601,7 @@ h2 {
 }
 
 .contact .contact-us .contact-item .social-media a:hover {
-  color: #628662;
+  color: #039dff;
 }
 
 .formField {
