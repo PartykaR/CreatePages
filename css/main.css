@@ -123,7 +123,7 @@ h2 {
 
 .underline {
   margin: 0 auto 40px;
-  width: 60px;
+  width: 160px;
   height: 4px;
   background-color: #039dff;
 }
@@ -545,7 +545,6 @@ h2 {
 
 .contact h2 {
   color: antiquewhite;
-  font-weight: bold;
 }
 
 .contact .underline {
@@ -573,12 +572,23 @@ h2 {
 
 .contact .contact-us .contact-item {
   margin: 30px 0;
+  color: #ccc;
+}
+
+.contact .contact-us .contact-item a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.contact .contact-us .contact-item a:hover {
+  color: #628662;
 }
 
 .contact .contact-us .contact-item h3 {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: antiquewhite;
 }
 
 .contact .contact-us .contact-item .social-media {
@@ -591,11 +601,51 @@ h2 {
 }
 
 .contact .contact-us .contact-item .social-media a:hover {
-  color: #628662;
+  color: #039dff;
+}
+
+.formField {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 3px 0 10px 0;
+  padding: 3px 0;
+}
+
+textarea.formField {
+  width: 300px;
+  height: 70px;
+}
+
+#sendBtn {
+  cursor: pointer;
+  background: #ccc;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ddd), to(#eee));
+  background: linear-gradient(#ddd 0, #eee 100%);
+  border: 1px solid #ccc;
+  line-height: 32px;
+  font-size: 14px;
+  padding: 0 25px;
+  border-radius: 3px;
+}
+
+#send_form_status {
+  border: 1px dashed #ccc;
+  display: none;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.status_ok {
+  color: #0b570b;
+}
+
+.status_err {
+  color: #860707;
 }
 
 .footer {
-  color: antiquewhite;
+  color: #f0f6fb;
 }
 
 @media (min-width: 375px) {
