@@ -171,10 +171,6 @@ nav .active,
   color: #039dff;
 }
 
-.menu-item {
-  display: inline-block;
-}
-
 header {
   color: antiquewhite;
 }
@@ -679,6 +675,74 @@ textarea.formField {
   }
   .prices .price-info {
     font-size: 18px;
+  }
+  .menu-item {
+    display: inline-block;
+    line-height: 40px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+  }
+  .menu-item:hover {
+    background-color: #363636;
+  }
+  .dropdown {
+    position: absolute;
+    width: 250px;
+  }
+  .dropdown li {
+    display: none;
+    opacity: 0;
+    background-color: #50515A;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    text-align: center;
+  }
+  .dropdown li a {
+    text-decoration: none;
+  }
+  .dropdown li:hover {
+    color: royalblue;
+  }
+  .menu-item:hover .dropdown li {
+    display: block;
+    -webkit-animation: menu1 .5s forwards;
+            animation: menu1 .5s forwards;
+  }
+  .menu-item:hover .dropdown li:nth-child(2) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+  .menu-item:hover .dropdown li:nth-child(3) {
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+  }
+  .menu-item:hover .dropdown li:nth-child(4) {
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+  }
+  @-webkit-keyframes menu1 {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(36deg);
+              transform: rotate(36deg);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+  }
+  @keyframes menu1 {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(36deg);
+              transform: rotate(36deg);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
   }
 }
 
